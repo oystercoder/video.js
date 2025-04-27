@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video.js Player Example</title>
+
+  <!-- Include Video.js CSS from CDN -->
+  <link
+    href="https://vjs.zencdn.net/8.10.0/video-js.css"
+    rel="stylesheet"
+  />
+  
+  <style>
+    /* Reset body margin and set full viewport height */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: #f0f0f0; /* Light background for contrast */
+    }
+
+    /* Center content */
+    .content-wrapper {
+      width: 90%; /* Make content responsive */
+      max-width: 800px;
+      height: 90%; /* Set a max-width for larger screens */
+    }
+
+    /* Title styling */
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    /* Optional: Make the video responsive */
+    #my-video {
+      width: 100%; /* Make the video fill the container width */
+      height: 50%; /* Maintain aspect ratio */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content-wrapper">
+    <!-- Title -->
+    <h1>Practise 1</h1>
+
+    <!-- Video.js Player -->
+    <video
+      id="my-video"
+      class="video-js"
+      controls
+      preload="auto"
+      autoplay
+      muted
+      data-setup="{}"
+      poster="https://via.placeholder.com/640x360.png?text=Video+Preview"
+    >
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+      </p>
+    </video>
+  </div>
+
+</body>
+</html>
